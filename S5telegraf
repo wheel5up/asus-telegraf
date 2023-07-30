@@ -1,0 +1,9 @@
+#!/bin/sh
+#PREARGS=nohup
+ENABLED=yes
+PROCS=telegraf
+ARGS="--config /opt/etc/telegraf.conf"
+DESC="Telegraf Agent"
+PATH=/opt/bin:/opt/sbin:/usr/bin:/usr/sbin:/bin
+
+. /opt/etc/init.d/rc.func
